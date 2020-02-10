@@ -3,6 +3,7 @@
 ## Contents
 
 - [Description](#description)
+- [Demo](#demo)
 - [Requirements](#requirements)
 - [Installation/Download](#install)
   - [Using Git](#git)
@@ -12,6 +13,10 @@
 ## Description
 
 18.5KB lightweight, fast & powerful JavaScript widget with zero dependencies. Uses browsers localstorage. Compatible with all web browsers.
+
+## Demo
+Working demo: https://shiveshrajnigam.github.io/Discussion-Widget
+- Clear localstorage 'discussion' to reset the store.
 
 ## Requirements
 
