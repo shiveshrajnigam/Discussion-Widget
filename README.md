@@ -12,10 +12,12 @@
 
 ## Description
 
-18.5KB lightweight, fast & powerful JavaScript widget with zero dependencies. Uses browsers localstorage. Compatible with all web browsers.
+19.11KB lightweight, fast & powerful JavaScript widget with zero dependencies. Uses browsers localstorage. Compatible with all web browsers.
 
 ## Demo
+
 Working demo: https://shiveshrajnigam.github.io/Discussion-Widget
+
 - Clear localstorage 'discussion' to reset the store.
 
 ## Requirements
@@ -30,12 +32,13 @@ Clone the project using HTTPS or SSH.
 
 ### ZIP
 
-Downoad the ZIP file and extract the files. 
+Download the ZIP file and extract the files.
 Double click index.html to open the widget in browser or right click index.html and select a browser to open.
 
 ## Object Constructor
 
 JavaScript object constructor to use as data for the template:
+
 ```js
 class node {
   constructor(index, text, vote, reply) {
@@ -50,6 +53,9 @@ class node {
   }
 }
 ```
+
 Create new objects for adding subsequent reply and discussion as:
+
 ```js
 new node(index, text, vote, reply);
+```

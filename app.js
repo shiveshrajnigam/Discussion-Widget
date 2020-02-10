@@ -21,12 +21,12 @@ window.onload = () => {
       }
     });
 
-  /* event listener for removing reply input box on document click */
+  /* function for handling document click events */
   onDocumentClick();
   /* remove the below function if number of elements in DOM are limited and bind the events on the respective elements (upVote, downVote, reply) for better performance */
   captureClickEvents(); //Event delegation
 
-  initRender();
+  init(); //initialize rendering and initial setup
 };
 
 /* List of names of persons which will be picked in a random manner */
@@ -306,7 +306,7 @@ const getSelectedObject = (parentObject, parentElement) => {
 };
 
 /* function for initial rendering */
-const initRender = () => {
+const init = () => {
   if (!localStorage.getItem("discussions")) {
     localStorage.setItem("discussions", JSON.stringify([]));
   } else {
