@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="discussion text-center">
+        <input
+          type="text"
+          placeholder="Create new discussion ..."
+          class="discussionInput"
+          id="discussionInput"
+          autofocus
+        />
+      </div>
+
+      <div id="results" class="padding-15">
+        <div
+          id="emptyState"
+          style="position: relative; top: 40%; text-align: center; font-size: 2em; color: #CCC;"
+        >
+          Start a discussion ...
+        </div>
+      </div>
+    </div>
+    <div id="errors"></div>
+  </body>
+  <script src="./app.js" async defer></script>
+</html>

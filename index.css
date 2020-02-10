@@ -1,0 +1,163 @@
+body {
+  background-color: #fff;
+  /* font-family: monospace; */
+}
+
+input:focus {
+  border: 2px solid #2196f3;
+  outline: none;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.actions {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.discussionInput {
+  padding: 15px;
+  font-size: 1em;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.discussionInput.small {
+  padding: 6px;
+  width: 80%;
+  height: 40px;
+  margin: 10px 0 10px 20px;
+  font-size: 1em;
+}
+.discussionInfo {
+  font-size: 0.85em;
+  color: gray;
+  margin: 10px 0;
+}
+
+.discussionContainer {
+  margin: 5px 20px;
+  padding: 10px;
+  border-left: 3px solid #cccccc78;
+  animation: expand 0.5s ease-in-out;
+  box-shadow: 0px 0px 5px #eee;
+}
+
+#results {
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+  font-size: 14px;
+  box-shadow: 5px 18px 20px #eee;
+}
+#results > .discussionContainer {
+  margin: 5px 0px;
+}
+#replyInput {
+  display: block;
+  animation: expand 0.3s ease-in-out;
+}
+
+@keyframes expand {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.timeElapsed {
+  opacity: 1;
+  transition: all 0.5s;
+}
+.timeElapsed.fadeInOut,
+#errors div.fadeInOut {
+  opacity: 0;
+}
+.cursorPointer {
+  cursor: pointer;
+}
+
+p {
+  margin: 10px 0px;
+}
+
+.arrow {
+  border: solid gray;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  cursor: pointer;
+}
+.upVote.arrow {
+  position: relative;
+  top: 2px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.downVote.arrow {
+  position: relative;
+  bottom: 2px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+#errors div {
+  padding: 15px;
+  color: #fff;
+  position: absolute;
+  top: 85%;
+  left: 80%;
+  border: 1px solid #bd362f;
+  border-radius: 5px;
+  background: #bd362f;
+  opacity: 0.8;
+  min-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s;
+  font-family: monospace;
+}
