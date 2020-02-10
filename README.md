@@ -31,7 +31,7 @@ Clone the project using HTTPS or SSH.
 ### ZIP
 
 Downoad the ZIP file and extract the files. 
-Double click index.html to open the widget in browser or right click index.html and select browser to open.
+Double click index.html to open the widget in browser or right click index.html and select a browser to open.
 
 ## Object Constructor
 
